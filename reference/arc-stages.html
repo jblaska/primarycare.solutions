@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arc of Care Stages · PrimaryCare.Solutions</title>
+  <meta name="description" content="Quick reference for the three stages of the Arc of Care — clinical objectives, provider role, and what belongs at each stage.">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .reference-wrap {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+    .reference-meta {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.8rem;
+      color: var(--text-light);
+      letter-spacing: 0.05em;
+      margin-bottom: 2rem;
+    }
+    .reference-meta a { color: var(--green-mid); }
+    .reference-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 400;
+      color: var(--green-deep);
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+    .reference-subtitle {
+      font-family: 'Lora', serif;
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--text-mid);
+      margin-bottom: 1.5rem;
+    }
+    .reference-rule {
+      width: 40px;
+      height: 2px;
+      background: var(--gold);
+      margin: 0 0 2.5rem;
+    }
+    .stage-block {
+      border: 1px solid var(--cream-border);
+      border-top: 4px solid var(--green-mid);
+      margin-bottom: 2rem;
+      background: var(--white);
+    }
+    .stage-header {
+      padding: 1.25rem 1.75rem 1rem;
+      border-bottom: 1px solid var(--cream-border);
+    }
+    .stage-num {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.3rem;
+    }
+    .stage-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--green-deep);
+      line-height: 1.2;
+    }
+    .stage-body {
+      padding: 1.25rem 1.75rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    .stage-col-label {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 0.5rem;
+    }
+    .stage-col ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .stage-col ul li {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.88rem;
+      color: var(--text-mid);
+      line-height: 1.55;
+      padding: 0.25rem 0;
+      border-bottom: 1px solid var(--cream-border);
+    }
+    .stage-col ul li:last-child { border-bottom: none; }
+    .stage-note {
+      padding: 1rem 1.75rem;
+      background: var(--cream-dark);
+      border-top: 1px solid var(--cream-border);
+      font-family: 'Lora', serif;
+      font-size: 0.9rem;
+      font-style: italic;
+      color: var(--text-mid);
+      line-height: 1.6;
+    }
+    .arc-principle {
+      background: var(--green-deep);
+      color: var(--cream-dark);
+      padding: 1.75rem 2rem;
+      margin-top: 2.5rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-style: italic;
+      line-height: 1.6;
+    }
+    .arc-principle span { color: var(--gold-light); }
+    .principles-list {
+      margin-top: 2rem;
+    }
+    .principles-list h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      color: var(--green-deep);
+      margin-bottom: 1rem;
+    }
+    .principles-list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .principles-list li {
+      font-family: 'Lora', serif;
+      font-size: 0.98rem;
+      color: var(--text);
+      line-height: 1.7;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--cream-border);
+      padding-left: 1rem;
+      border-left: 2px solid var(--cream-border);
+      margin-bottom: 0.5rem;
+    }
+    @media (max-width: 600px) {
+      .stage-body { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="open-access-bar">
+    Open access · No proprietary content · The barrier to entry is doing the work &nbsp;·&nbsp; <span>Target: public availability 2038</span>
+  </div>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="../index.html" class="site-name">Primary<span>Care</span>.Solutions</a>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="../index.html#framework">Framework</a></li>
+          <li><a href="../index.html#cooperative">Cooperative Model</a></li>
+          <li><a href="../index.html#example">Example</a></li>
+          <li><a href="../index.html#resonances">Global Resonances</a></li>
+          <li><a href="key-terms.html">Reference</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="reference-wrap">
+
+      <div class="reference-meta">
+        <a href="../index.html">PrimaryCare.Solutions</a> · Reference · <a href="key-terms.html">Key Terms</a>
+      </div>
+
+      <h1 class="reference-title">Arc of Care — Stages</h1>
+      <p class="reference-subtitle">Quick reference. Clinical objectives, provider role, and what belongs at each stage.</p>
+      <div class="reference-rule"></div>
+
+      <!-- Stage 1 -->
+      <div class="stage-block">
+        <div class="stage-header">
+          <div class="stage-num">Stage 1</div>
+          <div class="stage-name">Scaffold / Stabilize</div>
+        </div>
+        <div class="stage-body">
+          <div class="stage-col">
+            <div class="stage-col-label">Clinical objectives</div>
+            <ul>
+              <li>Halt deterioration</li>
+              <li>Rule out emergency events</li>
+              <li>Stabilize and reduce immediate risk</li>
+              <li>Reduce barriers to recovery — physical, logistical, psychological</li>
+              <li>Establish basic functional support for Stage 2</li>
+            </ul>
+          </div>
+          <div class="stage-col">
+            <div class="stage-col-label">Provider role / what belongs here</div>
+            <ul>
+              <li>Most directive provider role</li>
+              <li>Acute and emergency medicine when required</li>
+              <li>Stabilization before active treatment</li>
+              <li>Diagnosis and initial care plan</li>
+              <li>Building first layer of patient trust</li>
+            </ul>
+          </div>
+        </div>
+        <div class="stage-note">This is where most acute care operates — and stops. Relief has value. Mistaking relief for resolution is where many models stall.</div>
+      </div>
+
+      <!-- Stage 2 -->
+      <div class="stage-block">
+        <div class="stage-header">
+          <div class="stage-num">Stage 2</div>
+          <div class="stage-name">Repair / Treat</div>
+        </div>
+        <div class="stage-body">
+          <div class="stage-col">
+            <div class="stage-col-label">Clinical objectives</div>
+            <ul>
+              <li>Active intervention on the underlying condition, not only the presentation</li>
+              <li>Address root causes, not only symptoms</li>
+              <li>Reestablish function — meaningful normalcy</li>
+              <li>Sequence and coordinate modalities by patient need</li>
+            </ul>
+          </div>
+          <div class="stage-col">
+            <div class="stage-col-label">Provider role / what belongs here</div>
+            <ul>
+              <li>Most complex and powerful stage of the integrative model</li>
+              <li>Hub holds the arc strategy across providers</li>
+              <li>Different modalities applied at different points</li>
+              <li>Patient begins to build trust in the process</li>
+              <li>Stress / diet / sleep triad actively addressed</li>
+            </ul>
+          </div>
+        </div>
+        <div class="stage-note">The hub coordinates. No single modality is expected to carry the entire arc. The arc may be delivered by different clinicians — the hub maintains the strategy.</div>
+      </div>
+
+      <!-- Stage 3 -->
+      <div class="stage-block" style="border-top-color: var(--gold);">
+        <div class="stage-header">
+          <div class="stage-num">Stage 3</div>
+          <div class="stage-name">Retrain / Sustain</div>
+        </div>
+        <div class="stage-body">
+          <div class="stage-col">
+            <div class="stage-col-label">Clinical objectives</div>
+            <ul>
+              <li>Restore full function and independent self-management</li>
+              <li>Support adaptation under improved conditions</li>
+              <li>Reduce recurrence through capability-building, not continued dependency</li>
+              <li>Patient self-trust as the clinical target</li>
+            </ul>
+          </div>
+          <div class="stage-col">
+            <div class="stage-col-label">Provider role / what belongs here</div>
+            <ul>
+              <li>Most neglected stage in conventional models</li>
+              <li>Provider role shifts to facilitative</li>
+              <li>Health agency is the target — not symptom absence</li>
+              <li>Patient develops genuine self-knowledge of their system</li>
+              <li>Constitution as a predictive clinical variable</li>
+            </ul>
+          </div>
+        </div>
+        <div class="stage-note">The most critical stage for durable outcomes. A patient who completes Stage 3 does not need to return to Stage 1 for the same condition. A patient discharged at Stage 2 frequently does.</div>
+      </div>
+
+      <!-- Operational Principles -->
+      <div class="principles-list">
+        <h2>Operational principles</h2>
+        <ul>
+          <li>Different therapies are appropriate at different phases — this is expected, not a deficiency.</li>
+          <li>No single modality is expected to carry the entire arc.</li>
+          <li>The arc may be carried by different clinicians. The hub maintains the strategy.</li>
+          <li>Relief has value but is Stage 1 at best. Mistaking relief for resolution is where many inclusive models stall.</li>
+          <li>The arc applies to chronic care. Acute and emergent care has its own protocols — and is supported, not competed with, by a population moving along an improving health trajectory.</li>
+        </ul>
+      </div>
+
+      <div class="arc-principle">
+        The arc does not end at recovery. It ends at <span>capacity</span> — and capacity, properly supported, continues to develop.
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div>
+        <div class="footer-name">PrimaryCare.Solutions</div>
+        <div class="footer-tagline">
+          An open-access framework for integrative primary care.<br>
+          No proprietary content. The barrier to entry is doing the work.
+        </div>
+      </div>
+      <div class="footer-meta">
+        <span>Target: Public availability 2038</span>
+        60th anniversary of the Alma-Ata Declaration<br>
+        Living document · Updated as the framework develops
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
