@@ -38,7 +38,21 @@ img { max-width: 100%; display: block; }
 a { color: var(--green-mid); text-decoration: none; }
 a:hover { color: var(--gold); }
 
-/* ── Site Header ───────────────────────────────────────── */
+/* ── Hero Quote (Buckminster Fuller) ───────────────────── */
+.hero-quote {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.3rem, 2.8vw, 2rem);
+  font-weight: 300;
+  line-height: 1.4;
+  color: var(--cream);
+  max-width: 780px;
+  margin: 0 auto 1rem;
+  letter-spacing: -0.01em;
+}
+.hero-quote em {
+  font-style: italic;
+  color: var(--gold-light);
+}
 .site-header {
   background: var(--green-deep);
   padding: 0 2rem;
