@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="7" fill="#1C3A2E"/>
+
+  <!-- Stem -->
+  <line x1="16" y1="27" x2="16" y2="13"
+        stroke="#C4933F" stroke-width="2.2"
+        stroke-linecap="round"/>
+
+  <!-- Left leaf -->
+  <ellipse cx="11.5" cy="19" rx="4.5" ry="2.2"
+           fill="#C4933F" opacity="0.9"
+           transform="rotate(-40 11.5 19)"/>
+
+  <!-- Right leaf -->
+  <ellipse cx="20.5" cy="16.5" rx="4.5" ry="2.2"
+           fill="#F7F3EC" opacity="0.85"
+           transform="rotate(40 20.5 16.5)"/>
+
+  <!-- Bud at top -->
+  <ellipse cx="16" cy="10.5" rx="2.5" ry="3.5"
+           fill="#C4933F"/>
+
+  <!-- Tiny highlight on bud -->
+  <ellipse cx="15" cy="9.5" rx="0.8" ry="1.2"
+           fill="#F7F3EC" opacity="0.5"/>
+</svg>
