@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everspring Health — A Worked Example · PrimaryCare.Solutions</title>
+  <meta name="description" content="Everspring Health is a Minnesota-based integrative primary care practice that has operated as the sandbox for this framework for more than twenty years. One application of the model — not the template.">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .example-note {
+      background: var(--cream-dark);
+      border-left: 3px solid var(--cream-border);
+      padding: 1rem 1.5rem;
+      margin-bottom: 2.5rem;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.82rem;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+    .patient-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1px;
+      background: var(--cream-border);
+      border: 1px solid var(--cream-border);
+      margin: 1.5rem 0 2rem;
+    }
+    .patient-tile {
+      background: var(--white);
+      padding: 1rem 1.25rem;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.85rem;
+      color: var(--text-mid);
+      line-height: 1.5;
+    }
+    .narrative-placeholder {
+      border: 1px dashed var(--cream-border);
+      padding: 2rem;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+    .narrative-placeholder p {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.85rem;
+      color: var(--text-light);
+      font-style: italic;
+      margin-bottom: 0;
+    }
+    .everspring-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 1.25rem;
+    }
+    .everspring-link {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--green-mid);
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--green-mid);
+      transition: all 0.2s;
+    }
+    .everspring-link:hover {
+      background: var(--green-mid);
+      color: var(--white);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="open-access-bar">
+    Open access · No proprietary content · The barrier to entry is doing the work &nbsp;·&nbsp; <span>Target: public availability 2038</span>
+  </div>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="../index.html" class="site-name">Primary<span>Care</span>.Solutions</a>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="../index.html#framework">Framework</a></li>
+          <li><a href="../index.html#cooperative">Cooperative Model</a></li>
+          <li><a href="../index.html#example">Example</a></li>
+          <li><a href="../index.html#resonances">Global Resonances</a></li>
+          <li><a href="../reference/key-terms.html">Reference</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="content-page">
+
+      <aside class="content-sidebar">
+        <a href="../index.html" class="sidebar-back">← Home</a>
+        <div class="sidebar-label">A Worked Example</div>
+        <ul class="sidebar-nav">
+          <li class="active"><a href="everspring.html">Everspring Health</a></li>
+        </ul>
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--cream-border);">
+          <div class="sidebar-label">External</div>
+          <ul class="sidebar-nav">
+            <li><a href="https://everspringhealth.com" target="_blank">EverspringHealth.com ↗</a></li>
+            <li><a href="https://everspringleaving.com" target="_blank">EverspringLiving.com ↗</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <article>
+        <header class="article-header">
+          <div class="article-group">A Worked Example</div>
+          <h1>Everspring Health</h1>
+          <p class="deck">Minnesota, USA · Founded 2010 · Operating as the sandbox for this framework for more than twenty years. One application of the model — not the template.</p>
+          <div class="article-rule"></div>
+        </header>
+
+        <div class="article-body">
+
+          <div class="example-note">
+            This page describes one specific application of the integrative healthcare and cooperative models documented on this site. It is presented as evidence that the framework has been put into practice — not as a prescription for what the model must look like elsewhere. What Everspring demonstrates in Minnesota reflects Minnesota conditions, one practitioner's clinical lineage, and more than twenty years of refinement in a specific community.
+          </div>
+
+          <h2>The sandbox</h2>
+
+          <p>When the question was asked — if we were to rebuild primary care from the ground up, how would we do it? — the answer had three parts: a clinical model, a business model, and a place to put both into practice. Everspring Health is that place.</p>
+
+          <p>Founded in 2010 in Minnesota by John Blaska, Everspring was built as the working environment where the clinical and cooperative frameworks could be tested against real patients, refined against real outcomes, and demonstrated over time rather than theorized in isolation. More than twenty years of practice have produced the clinical knowledge behind this framework — not from research at a distance, but from the accumulated experience of holding patients' full arcs of care through conditions the conventional system had not resolved.</p>
+
+          <h2>The clinical philosophy in practice</h2>
+
+          <p>Everspring was founded on a clinical observation: most people who live long, full lives didn't have a protocol. They had a relationship with their daily life. The elder in Ikaria, the Hadza moving through their landscape, the Sardinian shepherd — they live in conditions where health is the natural path, not a performance target. Their bodies follow, not because they are exceptional, but because they are engaged.</p>
+
+          <p>The clinical work at Everspring is helping people develop that relationship with their own system. Not optimizing. Not rescuing. Working with the body's natural tendency toward health, in conditions that support rather than undermine it. The Stress/Diet/Sleep triad is the entry point — three variables every patient can observe, every provider can address, that together define the environment in which recovery either happens or doesn't. Constitutional self-knowledge is the deeper work — understanding how this specific system responds, what depletes it, what restores it, how it moves through an arc of recovery.</p>
+
+          <p>The name carries the philosophy. Every spring. Every day is another beginning — not recovery from yesterday's failure, not execution of today's protocol. Showing up, with more intention and less strain than before.</p>
+
+          <h2>The hub in practice</h2>
+
+          <p>In its current form, Everspring demonstrates the hub model at its essential minimum. One practitioner — John Blaska, with deep constitutional knowledge of his patients accumulated across years of relationship — holds the full arc of care. The hub is not a room or a staff size. It is a function: holding the strategy, tracking the patient's position in their arc, and making every clinical decision oriented toward the target endpoint rather than the presenting instance.</p>
+
+          <p>Where the arc requires disciplines beyond what is delivered directly, coordinated referrals extend the reach — but with a critical distinction from conventional referral practice. A conventional referral hands off and moves on. A hub-model referral communicates the arc strategy to the receiving provider: where this patient is, what stage of recovery they are in, what the target endpoint is, and what confirmation of progress looks like. The hub stays engaged across the referral. The arc is held across providers rather than fragmented between them.</p>
+
+          <p>This is the minimum viable integrative model. It demonstrates what the hub function requires — not a facility, not a full team under one roof, but one practitioner with the clinical depth and relational history to hold the whole picture — and what becomes possible when that function is present consistently over time.</p>
+
+          <h2>Who Everspring serves</h2>
+
+          <p>The patient population at Everspring is defined less by diagnosis than by clinical situation: people whose conditions have not resolved through conventional care, who have tried multiple approaches, and who arrive carrying both the condition and the accumulated experience of a system that saw their presenting instance and not their arc.</p>
+
+          <p>Conditions seen regularly include:</p>
+
+          <div class="patient-grid">
+            <div class="patient-tile">Cycle-related conditions and hormonal dysregulation</div>
+            <div class="patient-tile">Chronic fatigue, dysautonomia, and post-viral conditions including post-COVID</div>
+            <div class="patient-tile">Migraine — chronic and complex patterns</div>
+            <div class="patient-tile">IBS, IBD, GERD, Crohn's, Colitis</div>
+            <div class="patient-tile">Mast Cell Activation Syndrome (MCAS)</div>
+            <div class="patient-tile">Bell's Palsy and Ramsay Hunt syndrome</div>
+            <div class="patient-tile">Chemotherapy support and recovery</div>
+            <div class="patient-tile">Athletic performance and recovery — triathletes, marathoners, cyclists, tennis, pickleball</div>
+            <div class="patient-tile">Complex and multi-system cases — the cases that don't fit a single diagnosis</div>
+          </div>
+
+          <p>These are not the easiest cases. They are the cases where the integrative model — with its arc orientation, constitutional depth, and hub coordination — produces outcomes that the instance-by-instance conventional model does not. Twenty years of seeing these conditions has produced clinical pattern recognition that no single framework document can fully capture.</p>
+
+          <h2>What it has demonstrated</h2>
+
+          <p>Twenty years of practice has demonstrated one thing above all: the body's capacity to recover extends well past the point where most conventional care stops looking for it. Patients who were told "this is probably how it will be" have gotten their lives back. Not all of them. Not without work. But consistently enough, across enough different conditions and circumstances, that the clinical conclusion is not optimism — it is observation.</p>
+
+          <p>The self-regulating nature of the model is real. Patients who move through the arc from dependency into independence and interdependence free clinical capacity for the next complex case. The mix stabilizes over time. The practice becomes more capable as it succeeds — not despite the fact that patients get better, but because of it.</p>
+
+          <div class="narrative-placeholder">
+            <p>Case narratives and clinical observations from practice — in development.<br>
+            The work of documenting what twenty years of holding patients' arcs has produced is ongoing.</p>
+          </div>
+
+          <h2>Minnesota and what comes next</h2>
+
+          <p>Everspring operates in Minnesota for reasons beyond geography. Minnesota has one of the strongest cooperative traditions in the United States — CHS, Land O'Lakes, and a dense network of agricultural, food, and financial cooperatives that give the community an existing reference for member-owned organizational structures. The cooperative model for healthcare is not foreign here in the way it is elsewhere. The infrastructure and cultural receptivity that makes it viable are already present.</p>
+
+          <p>The scaling vision from a single practice is a two-site model: a Twin Cities anchor site demonstrating the full neighborhood hub concept, and a rural site demonstrating the model's reach into communities that have lost clinic access. Each site demonstrates a different dimension of the framework. Together they make the case that the model works across the geographic and demographic contexts where Minnesota primary care most needs it.</p>
+
+          <p>The longer horizon is the federated cooperative network — local cooperatives connected through shared infrastructure, each owned by its community, each practicing the integrative clinical model. Everspring is the proof of concept. The network is what the proof of concept is for.</p>
+
+          <div class="everspring-links">
+            <a href="https://everspringhealth.com" target="_blank" class="everspring-link">EverspringHealth.com ↗</a>
+            <a href="https://everspringleaving.com" target="_blank" class="everspring-link">EverspringLiving.com ↗</a>
+          </div>
+
+        </div>
+
+        <nav class="primer-nav-footer">
+          <div>
+            <a href="../index.html#cooperative" class="primer-nav-link">← Cooperative Model</a>
+            <div class="primer-nav-title">How it works</div>
+          </div>
+          <div style="text-align: right;">
+            <a href="../index.html#resonances" class="primer-nav-link">Next →</a>
+            <div class="primer-nav-title">Global Resonances</div>
+          </div>
+        </nav>
+
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div>
+        <div class="footer-name">PrimaryCare.Solutions</div>
+        <div class="footer-tagline" style="margin-bottom: 0.3rem;">Curated by John Blaska</div>
+        <div class="footer-tagline">An open-access framework for integrative primary care.<br>No proprietary content. The barrier to entry is doing the work.</div>
+      </div>
+      <div class="footer-meta">
+        <span>Target: Public availability 2038</span>
+        60th anniversary of the Alma-Ata Declaration<br>
+        Living document · Updated as the framework develops
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
