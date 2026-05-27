@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Evidence Base · PrimaryCare.Solutions</title>
+  <meta name="description" content="The workplace cost data behind the cooperative primary care argument. Healthcare costs, pain and digestive burden, and mental health — sourced, organized, and updated quarterly.">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .reference-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+    .reference-meta {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.8rem;
+      color: var(--text-light);
+      letter-spacing: 0.05em;
+      margin-bottom: 2rem;
+    }
+    .reference-meta a { color: var(--green-mid); }
+    .reference-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 400;
+      color: var(--green-deep);
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+    .reference-subtitle {
+      font-family: 'Lora', serif;
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--text-mid);
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    .reference-rule {
+      width: 40px;
+      height: 2px;
+      background: var(--gold);
+      margin: 0 0 2.5rem;
+    }
+    .citation-note {
+      background: var(--cream-dark);
+      border-left: 3px solid var(--cream-border);
+      padding: 1rem 1.5rem;
+      margin-bottom: 2.5rem;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.8rem;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+    .data-section {
+      margin-bottom: 3.5rem;
+      padding-bottom: 3.5rem;
+      border-bottom: 1px solid var(--cream-border);
+    }
+    .data-section:last-of-type { border-bottom: none; }
+    .data-section-label {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+    .data-section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.7rem;
+      font-weight: 400;
+      color: var(--green-deep);
+      margin-bottom: 1.25rem;
+      line-height: 1.2;
+    }
+    .data-group {
+      margin-bottom: 2rem;
+    }
+    .data-group-title {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--cream-border);
+    }
+    .stat-row {
+      display: flex;
+      gap: 1.5rem;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid var(--cream-border);
+      align-items: baseline;
+    }
+    .stat-row:last-child { border-bottom: none; }
+    .stat-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--green-deep);
+      min-width: 160px;
+      flex-shrink: 0;
+      line-height: 1.2;
+    }
+    .stat-number.highlight { color: var(--gold); }
+    .stat-desc {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.88rem;
+      color: var(--text-mid);
+      line-height: 1.6;
+      flex-grow: 1;
+    }
+    .stat-source {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.72rem;
+      color: var(--text-light);
+      margin-top: 0.2rem;
+    }
+    .stat-source a { color: var(--green-mid); }
+    .callout-data {
+      background: var(--green-deep);
+      color: var(--cream);
+      padding: 1.5rem 2rem;
+      margin: 1.5rem 0;
+    }
+    .callout-data-label {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 0.6rem;
+    }
+    .callout-data p {
+      font-family: 'Lora', serif;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--cream-dark);
+      margin-bottom: 0;
+    }
+    .callout-data strong { color: var(--gold-light); }
+    .observation {
+      background: var(--cream-dark);
+      border-left: 3px solid var(--green-mid);
+      padding: 1rem 1.5rem;
+      margin: 1.5rem 0;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.88rem;
+      color: var(--text-mid);
+      line-height: 1.65;
+    }
+    .observation strong { color: var(--text); }
+  </style>
+</head>
+<body>
+
+  <div class="open-access-bar">
+    Open access · No proprietary content · The barrier to entry is doing the work &nbsp;·&nbsp; <span>Target: public availability 2038</span>
+  </div>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="../index.html" class="site-name">Primary<span>Care</span>.Solutions</a>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="../index.html#framework">Framework</a></li>
+          <li><a href="../index.html#cooperative">Cooperative Model</a></li>
+          <li><a href="../index.html#example">Example</a></li>
+          <li><a href="../index.html#resonances">Global Resonances</a></li>
+          <li><a href="key-terms.html">Reference</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="reference-wrap">
+
+      <div class="reference-meta">
+        <a href="../index.html">PrimaryCare.Solutions</a> · Reference · Evidence Base
+      </div>
+
+      <h1 class="reference-title">The Evidence Base</h1>
+      <p class="reference-subtitle">The workplace cost data behind the cooperative primary care argument. Organized by category, sourced, and reviewed quarterly.</p>
+      <div class="reference-rule"></div>
+
+      <div class="citation-note">
+        Sources on this page are current as of May 2026. Government statistical releases (CMS, CDC, KFF), peer-reviewed journals, and major research organizations are prioritized. Industry sources are used where noted and treated as directional rather than definitive. Links verified at time of publication — reviewed quarterly for continued validity. If you find a broken or outdated citation, the framework is open and corrections are welcomed.
+      </div>
+
+      <!-- SECTION 1: COSTS -->
+      <div class="data-section">
+        <div class="data-section-label">Section 1</div>
+        <h2 class="data-section-title">The Cost Landscape</h2>
+
+        <div class="data-group">
+          <div class="data-group-title">National healthcare expenditure</div>
+
+          <div class="stat-row">
+            <div class="stat-number">$5.3T</div>
+            <div>
+              <div class="stat-desc">Total US healthcare spending in 2024 — 18.0% of GDP, growing 7.2% from 2023. Per capita: $15,474 per person.</div>
+              <div class="stat-source"><a href="https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/historical" target="_blank">CMS National Health Expenditure Accounts, 2024</a></div>
+            </div>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-number">$8.6T</div>
+            <div>
+              <div class="stat-desc">Projected US healthcare spending by 2033 — $24,200 per person, reaching 20.3% of GDP.</div>
+              <div class="stat-source"><a href="https://www.pgpf.org/article/healthcare-spending-will-be-one-fifth-of-the-economy-within-a-decade/" target="_blank">Peter G. Peterson Foundation, citing CMS Office of the Actuary</a></div>
+            </div>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-number highlight">Under 5%</div>
+            <div>
+              <div class="stat-desc">Share of total US healthcare spending directed to primary care — despite primary care accounting for 80–90% of all healthcare encounters. The OECD average is closer to 8%. The layer that produces the most value per dollar is the most starved.</div>
+              <div class="stat-source"><a href="https://www.milbank.org/publications/the-health-of-us-primary-care-2025-scorecard-report-the-cost-of-neglect/" target="_blank">Milbank Memorial Fund, 2025 Primary Care Scorecard</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="data-group">
+          <div class="data-group-title">Employer-sponsored insurance — what employers actually pay</div>
+
+          <div class="stat-row">
+            <div class="stat-number">$26,993</div>
+            <div>
+              <div class="stat-desc">Average annual premium for employer-sponsored family health coverage in 2025. The employer pays roughly $20,143 (74%); the worker pays $6,850 (26%). Family premiums rose 6% in 2025 — the third consecutive year of 6%+ increases.</div>
+              <div class="stat-source"><a href="https://www.kff.org/health-costs/2025-employer-health-benefits-survey/" target="_blank">KFF Employer Health Benefits Survey, 2025</a></div>
+            </div>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-number">$9,325</div>
+            <div>
+              <div class="stat-desc">Average annual premium for single coverage in 2025. Employer pays ~$7,885; worker pays $1,440.</div>
+              <div class="stat-source"><a href="https://www.kff.org/health-costs/2025-employer-health-benefits-survey/" target="_blank">KFF Employer Health Benefits Survey, 2025</a></div>
+            </div>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-number highlight">80%</div>
+            <div>
+              <div class="stat-desc">Share of covered workers at firms with 200+ employees who are in self-funded plans. The employer already bears the financial risk of those medical claims directly — not the insurer. 67% of all covered workers are in self-funded arrangements.</div>
+              <div class="stat-source"><a href="https://www.kff.org/health-costs/2025-employer-health-benefits-survey/" target="_blank">KFF Employer Health Benefits Survey, 2025</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="observation">
+          <strong>The structural argument in one sentence:</strong> The US is not underspending on healthcare — it is misallocating an enormous pool of capital. Per-capita spending is roughly double the OECD average. Outcomes are not. The layer that should be doing the work (primary care) receives under 5% of the spending, while the system is organized around things primary care could have prevented.
+        </div>
+      </div>
+
+      <!-- SECTION 2: PAIN AND DIGESTIVE -->
+      <div class="data-section">
+        <div class="data-section-label">Section 2</div>
+        <h2 class="data-section-title">The Undercounted Burden — Pain and Digestive</h2>
+
+        <p style="font-family: 'Lora', serif; font-size: 0.98rem; color: var(--text-mid); line-height: 1.75; margin-bottom: 1.5rem;">The standard chronic disease list used in most benefits analyses — obesity, hypertension, diabetes, smoking — systematically misses the two largest actual cost drivers in most workforces. Musculoskeletal pain and gastrointestinal conditions don't fit the metabolic disease framework, cross specialty boundaries, and are predominantly presenteeism-driven. Most of their cost is invisible to standard accounting.</p>
+
+        <div class="callout-data">
+          <div class="callout-data-label">The number that changes the conversation</div>
+          <p>One in eight US workers loses an average of <strong>5 hours per week</strong> to a pain condition. Of that productivity loss, <strong>76.6% is presenteeism</strong> — people at work, performing at reduced capacity. It does not appear as absenteeism. It appears as output gaps, error rates, and decisions you attribute to other causes. Most workforce health cost analyses miss the majority of the actual cost.</p>
+        </div>
+
+        <div class="data-group">
+          <div class="data-group-title">Chronic pain — prevalence and aggregate cost</div>
+
+          <div class="stat-row">
+            <div class="stat-number">24.3%</div>
+            <div>
+              <div class="stat-desc">Share of US adults with chronic pain — approximately 60 million adults. Up from 20.4% in 2019. Rural residents, women, lower-income populations, and those on public insurance are disproportionately affected.</div>
+              <div class="stat-source"><a href="https://www.cdc.gov/nchs/products/databriefs/db518.htm" target="_blank">CDC NCHS Data Brief 518, October 2024</a></div>
+            </div>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-number">$560–635B</div>
+            <div>
+              <div class="stat-desc">Annual US cost of chronic pain — combined direct medical costs, lost productivity, and disability. Larger than the annual cost of heart disease, cancer, or diabetes by most accounting.</div>
+              <div class="stat-source"><a href="https://www.nccih.nih.gov/research/research-results/defining-the-prevalence-of-chronic-pain-in-the-united-states" target="_blank">NIH NCCIH</a>; <a href="https://www.hhs.gov/sites/default/files/pmtf-final-report-2019-05-23.pdf" target="_blank">HHS Pain Management Task Force Report</a></div>
+            </div>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-number highlight">76.6%</div>
+            <div>
+              <div class="stat-desc">Share of pain-related lost productive time attributable to presenteeism — not absenteeism. The foundational workforce pain study: 1 in 8 US workers, average 5 hours/week lost, $61.2 billion annually (2003 dollars). Headache, back pain, arthritis, and joint/muscle pain were the top contributors.</div>
+              <div class="stat-source"><a href="https://pubmed.ncbi.nlm.nih.gov/14612481/" target="_blank">Stewart et al., JAMA, 2003</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="data-group">
+          <div class="data-group-title">Low back pain</div>
+
+          <div class="stat-row">
+            <div class="stat-number">No. 1</div>
+            <div>
+              <div class="stat-desc">Low back pain has been the leading cause of years lived with disability globally since 1990. In 2020, it affected 619 million people worldwide. Projected to reach 843 million prevalent cases by 2050. 70% of disability years occur in working-age people (20–65).</div>
+              <div class="stat-source"><a href="https://www.healthdata.org/news-events/newsroom/news-releases/lancet-new-study-shows-low-back-pain-leading-cause-disability" target="_blank">IHME Global Burden of Disease 2021, Lancet Rheumatology 2023</a></div>
+            </div>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-number">$100B+</div>
+            <div>
+              <div class="stat-desc">Annual US cost of low back pain — direct medical costs and lost productivity. Two-thirds of the cost is lost wages and productivity, not medical care. Per 100 employees: ~$7,100 in short-term disability, $4,200 in long-term disability, $1,900 in worker compensation.</div>
+              <div class="stat-source">Vori Health/CDC summary; HHS Task Force Report</div>
+            </div>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-number highlight">16.7 min</div>
+            <div>
+              <div class="stat-desc">Lost per employee per day to back pain presenteeism — equivalent to over $1.2 million in annual productivity loss in the studied healthcare workforce. Chronic back pain was the single top driver of presenteeism across all measured health conditions in the study.</div>
+              <div class="stat-source">Allen et al., Human Resources for Health, 2018</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="data-group">
+          <div class="data-group-title">Migraine</div>
+
+          <div class="stat-row">
+            <div class="stat-number">89%</div>
+            <div>
+              <div class="stat-desc">Share of migraine-related productivity loss attributable to presenteeism. Migraine is the leading cause of disability worldwide among people under 50. People with migraine function at less than half capacity during an attack.</div>
+              <div class="stat-source"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9237352/" target="_blank">PMC review; WHO/Global Burden of Disease</a></div>
+            </div>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-number highlight">16%</div>
+            <div>
+              <div class="stat-desc">Migraine's estimated share of total US workforce presenteeism. If accurate, migraine alone accounts for nearly one-sixth of all US workforce productivity loss from health conditions.</div>
+              <div class="stat-source"><a href="https://journals.sagepub.com/doi/full/10.1177/0333102420977852" target="_blank">SAGE/Cephalalgia review of US data</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="data-group">
+          <div class="data-group-title">Gastrointestinal conditions</div>
+
+          <div class="stat-row">
+            <div class="stat-number">70M</div>
+            <div>
+              <div class="stat-desc">Americans affected by gastrointestinal diseases each year — twice as many as those living with diabetes. Direct healthcare costs: ~$136 billion annually. 71% of US workers report GI issues at least a few times per month.</div>
+              <div class="stat-source">Oshi Health analysis; Cigna analysis</div>
+            </div>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-number">$7,008</div>
+            <div>
+              <div class="stat-desc">Annual indirect cost per IBS-D patient vs. $4,522 for matched controls — $2,486 in incremental indirect cost per affected employee. Employees with IBS report 15–21% greater work productivity loss than employees without.</div>
+              <div class="stat-source"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5310011/" target="_blank">BMC HRQoL/IBS-D study</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="data-group">
+          <div class="data-group-title">Agricultural workforce specifics</div>
+
+          <div class="stat-row">
+            <div class="stat-number">1.5×</div>
+            <div>
+              <div class="stat-desc">Back pain prevalence in production agriculture relative to the US industry average. Farming is the occupation most often associated with disability for women in the US, and second most often for men.</div>
+              <div class="stat-source">Guo et al., NHIS reanalysis, 1999</div>
+            </div>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-number highlight">37.5%</div>
+            <div>
+              <div class="stat-desc">Share of Kansas Farmers' Cooperative members reporting work-related low back pain in the prior year — the highest of any body region. Approximately 60% of farmers experienced MSD symptoms in at least one body region in the prior year.</div>
+              <div class="stat-source"><a href="https://stacks.cdc.gov/view/cdc/191491/cdc_191491_DS1.pdf" target="_blank">Rosecrance et al., American Journal of Industrial Medicine, 2006</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="observation">
+          <strong>What makes this the cooperative care argument:</strong> Pain and GI conditions are the conditions the integrative model is specifically built to address — and precisely the conditions conventional medicine handles worst. First-line evidence-based treatment for low back pain is physical therapy, exercise, and behavioral approaches — the front door of the cooperative care model, not a specialty referral after opioids fail.
+        </div>
+      </div>
+
+      <!-- SECTION 3: MENTAL HEALTH -->
+      <div class="data-section">
+        <div class="data-section-label">Section 3</div>
+        <h2 class="data-section-title">Mental Health — The Structural Shift</h2>
+
+        <p style="font-family: 'Lora', serif; font-size: 0.98rem; color: var(--text-mid); line-height: 1.75; margin-bottom: 1.5rem;">Mental health is the third major undercounted category in the workplace cost picture. The post-pandemic landscape has made what was already a structural problem into a visible one. The prevalence numbers shifted upward during the pandemic and have not returned to baseline. The agricultural and rural workforce bears a disproportionate share of the burden.</p>
+
+        <div class="data-group">
+          <div class="data-group-title">Prevalence — current and trend</div>
+
+          <div class="stat-row">
+            <div class="stat-number">23%</div>
+            <div>
+              <div class="stat-desc">Share of US adults with any mental illness in 2024 — approximately 57.8 million people. 5.6% experienced serious mental illness; 19.1% had anxiety disorders; 15.5% had major depressive disorder.</div>
+              <div class="stat-source"><a href="https://www.nami.org/about-mental-illness/mental-health-by-the-numbers/" target="_blank">NAMI Mental Health by the Numbers, 2024</a></div>
+            </div>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-number highlight">18.5% → 21.4%</div>
+            <div>
+              <div class="stat-desc">Depression symptom prevalence among US adults — 2019 to 2022. The pandemic accelerated a structural trend that has not reversed. Symptoms were highest among adults aged 18–29.</div>
+              <div class="stat-source"><a href="https://www.cdc.gov/nchs/data/nhsr/nhsr213.pdf" target="_blank">CDC National Health Statistics Report 213, November 2024</a></div>
+            </div>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-number">1 in 3</div>
+            <div>
+              <div class="stat-desc">Prevalence of mental illness among US adults aged 18–25 — 32.2% in 2024. Gen Z workers currently represent 18% of the US workforce and are entering employment with mental health prevalence rates substantially above the broader workforce average.</div>
+              <div class="stat-source"><a href="https://www.nami.org/about-mental-illness/mental-health-by-the-numbers/" target="_blank">NAMI, 2024</a></div>
+            </div>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-number highlight">57%</div>
+            <div>
+              <div class="stat-desc">Share of adults with mental illness who receive no treatment or medication. The treatment gap exists not because conditions are unrecognized but because behavioral health is not integrated into the primary care relationship — patients are referred out and lost in the navigation.</div>
+              <div class="stat-source">NAMI; The Zebra mental health statistics 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="data-group">
+          <div class="data-group-title">Workplace cost</div>
+
+          <div class="stat-row">
+            <div class="stat-number">$300B+</div>
+            <div>
+              <div class="stat-desc">Estimated annual cost of job stress to US companies — healthcare costs, absenteeism, and poor performance combined. Depression alone costs US businesses over $26 billion in healthcare costs and $51.5 billion in lost productivity annually.</div>
+              <div class="stat-source"><a href="https://www.uml.edu/research/cph-new/worker/stress-at-work/financial-costs.aspx" target="_blank">UMass Lowell CPH-NEW</a>; Modern Health</div>
+            </div>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-number highlight">5–10×</div>
+            <div>
+              <div class="stat-desc">Ratio of presenteeism to absenteeism costs for depression. Mean presenteeism cost per person with depression in the US: $5,524 per year — the highest of eight countries studied. Approximately 1 million US workers are absent every day due to stress.</div>
+              <div class="stat-source"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5101346/" target="_blank">Evans-Lacko & Knapp, Social Psychiatry and Psychiatric Epidemiology, 2016</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="data-group">
+          <div class="data-group-title">Agricultural and rural workforce</div>
+
+          <div class="stat-row">
+            <div class="stat-number highlight">2–5×</div>
+            <div>
+              <div class="stat-desc">Farmers are 2 to 5 times more likely to die by suicide than the general population, depending on study and definition. Age-adjusted suicide rate for farm managers and owners: 22.3 per 100,000 — among the highest occupational rates documented.</div>
+              <div class="stat-source"><a href="https://www.fb.org/initiative/farm-state-of-mind" target="_blank">American Farm Bureau Federation Farm State of Mind</a>; Journal of Rural Mental Health 2023</div>
+            </div>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-number">65%</div>
+            <div>
+              <div class="stat-desc">Share of rural US counties without a single psychiatrist. Rural US suicide rate has increased 46% over the past 20 years. The communities an anchor cooperative serves bear the highest unmet mental health burden in the country.</div>
+              <div class="stat-source"><a href="https://www.thepacker.com/news/industry/silent-epidemic-confronting-mental-health-u-s-agriculture" target="_blank">National Rural Health Association, via The Packer, 2025</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="data-group">
+          <div class="data-group-title">The evidence base for the structural response</div>
+
+          <div class="stat-row">
+            <div class="stat-number highlight">90+ RCTs</div>
+            <div>
+              <div class="stat-desc">Randomized controlled trials supporting the Collaborative Care Model — behavioral health integrated directly into primary care rather than referred out. The most-evidenced delivery model in mental health. The cooperative care model integrates behavioral health as a team member from day one.</div>
+              <div class="stat-source"><a href="https://aims.uw.edu/evidence-base-for-cocm/" target="_blank">AIMS Center, University of Washington</a></div>
+            </div>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-number">$4 return</div>
+            <div>
+              <div class="stat-desc">For every $1 invested in scaled-up treatment for depression and anxiety — return in improved health and productivity. This is the most-cited ROI figure in workplace mental health and measures treatment outcomes rather than lifestyle behavior change.</div>
+              <div class="stat-source">WHO global ROI calculation</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="observation">
+          <strong>The longer arc:</strong> The pandemic accelerated a structural mental health shift that was already underway. Gen Z entering the workforce at 1 in 3 prevalence means this is not a spike returning to baseline — it is a new baseline. The rural and agricultural workforce faces this burden with the least access infrastructure. The cooperative care model delivers the evidence-based structural response — collaborative care — as a design feature, not an add-on.
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div>
+        <div class="footer-name">PrimaryCare.Solutions</div>
+        <div class="footer-tagline" style="margin-bottom: 0.3rem;">Curated by John Blaska</div>
+        <div class="footer-tagline">An open-access framework for integrative primary care.<br>No proprietary content. The barrier to entry is doing the work.</div>
+      </div>
+      <div class="footer-meta">
+        <span>Target: Public availability 2038</span>
+        60th anniversary of the Alma-Ata Declaration<br>
+        Living document · Updated as the framework develops
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
