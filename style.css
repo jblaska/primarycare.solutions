@@ -645,3 +645,78 @@ a:hover { color: var(--gold); }
   font-size: 0.95rem;
   line-height: 1.5;
 }
+
+/* ===== Cost of Care landing page ===== */
+.format-step {
+  display: flex;
+  gap: 1.1rem;
+  align-items: flex-start;
+  margin: 1.25rem 0;
+}
+.format-step-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: var(--gold);
+  line-height: 1;
+  min-width: 1.6rem;
+  padding-top: 0.1rem;
+}
+.format-step-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--green-deep);
+  margin-bottom: 0.25rem;
+}
+.format-step-body p { margin: 0; }
+
+/* arc key table */
+.arc-key {
+  margin: 1.75rem 0;
+  border-top: 1px solid var(--cream-border);
+}
+.arc-key-row {
+  display: grid;
+  grid-template-columns: 8.5rem 1.2rem 9rem 1fr;
+  align-items: baseline;
+  gap: 0.5rem 0.9rem;
+  padding: 1rem 0.25rem;
+  border-bottom: 1px solid var(--cream-border);
+}
+.arc-key-clinical {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--green-deep);
+  line-height: 1.1;
+}
+.arc-key-arrow {
+  color: var(--green-light);
+  font-size: 1rem;
+  text-align: center;
+}
+.arc-key-plain {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--gold);
+  align-self: center;
+}
+.arc-key-desc {
+  font-size: 0.92rem;
+  color: var(--text-mid);
+  line-height: 1.5;
+}
+.arc-key-final .arc-key-clinical { color: var(--gold); }
+.arc-key-final .arc-key-arrow { color: var(--gold); }
+
+@media (max-width: 640px) {
+  .arc-key-row {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+  .arc-key-arrow { display: none; }
+}
