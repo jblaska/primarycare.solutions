@@ -781,8 +781,7 @@ a:hover { color: var(--gold); }
   color: var(--text-mid);
   line-height: 1.5;
 }
-.arc-key-final .arc-key-clinical { color: var(--gold); }
-.arc-key-final .arc-key-arrow { color: var(--gold); }
+/* arc-key-final now renders uniform with other stages (green) */
 
 @media (max-width: 640px) {
   .arc-key-row {
