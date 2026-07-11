@@ -550,6 +550,70 @@ a:hover { color: var(--gold); }
   .footer-meta { text-align: left; }
 }
 
+/* ===== Case Library list (landing page) ===== */
+/* Inherits the primer-list visual language, with an added teaser line. */
+.case-list {
+  max-width: var(--max-width);
+  margin: 2.5rem auto 0;
+  list-style: none;
+}
+.case-list-item {
+  display: flex;
+  align-items: baseline;
+  gap: 1.25rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--cream-border);
+  text-decoration: none;
+  transition: padding-left 0.15s ease;
+}
+.case-list-item:first-child {
+  border-top: 1px solid var(--cream-border);
+}
+.case-list-item:hover {
+  padding-left: 0.4rem;
+}
+.case-list-num {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.06em;
+  min-width: 28px;
+  white-space: nowrap;
+  padding-top: 0.25rem;
+}
+.case-list-body {
+  flex-grow: 1;
+}
+.case-list-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  color: var(--green-deep);
+  line-height: 1.25;
+  margin-bottom: 0.2rem;
+}
+.case-list-item:hover .case-list-title {
+  color: var(--gold);
+}
+.case-list-lesson {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+.case-list-status {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+  white-space: nowrap;
+  align-self: flex-start;
+  margin-top: 0.15rem;
+}
+
 /* ===== Cost of Care section components ===== */
 .part-label {
   font-family: 'Source Sans 3', sans-serif;
@@ -564,7 +628,6 @@ a:hover { color: var(--gold); }
 }
 .part-label:first-child { margin-top: 0.5rem; }
 
-/* stat row */
 .stat-row {
   display: flex;
   gap: 1rem;
@@ -595,7 +658,6 @@ a:hover { color: var(--gold); }
   color: var(--text-mid);
 }
 
-/* arc stages */
 .arc-stage {
   border-left: 3px solid var(--green-light);
   background: var(--cream-dark);
@@ -637,9 +699,11 @@ a:hover { color: var(--gold); }
   background: var(--cream-dark);
   border-radius: 2px;
 }
+.arc-stage-final .arc-stage-plain {
+  background: var(--cream-dark);
+}
 .arc-stage p { margin: 0; }
 
-/* callout variants */
 .callout-plain {
   background: transparent;
   border-top-color: var(--gold);
@@ -679,7 +743,6 @@ a:hover { color: var(--gold); }
 }
 .format-step-body p { margin: 0; }
 
-/* arc key table */
 .arc-key {
   margin: 1.75rem 0;
   border-top: 1px solid var(--cream-border);
