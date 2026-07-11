@@ -598,11 +598,19 @@ a:hover { color: var(--gold); }
 /* arc stages */
 .arc-stage {
   border-left: 3px solid var(--green-light);
-  padding: 0.4rem 0 0.4rem 1.5rem;
-  margin: 1.75rem 0;
+  background: var(--cream-dark);
+  padding: 1.25rem 1.5rem 1.4rem;
+  margin: 2.25rem 0;
+  border-radius: 0 3px 3px 0;
+}
+.arc-stage + .arc-stage {
+  margin-top: 2.25rem;
 }
 .arc-stage-final {
   border-left-color: var(--gold);
+  background: var(--cream);
+  border: 1px solid var(--cream-border);
+  border-left: 3px solid var(--gold);
 }
 .arc-stage-head {
   display: flex;
