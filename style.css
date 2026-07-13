@@ -579,8 +579,23 @@ a:hover { color: var(--gold); }
   color: var(--gold);
   letter-spacing: 0.06em;
   min-width: 28px;
+  flex-shrink: 0;
   white-space: nowrap;
   padding-top: 0.25rem;
+}
+
+/* Record list: labels are place names, not case numbers — needs a wider column */
+.case-list-wide .case-list-num {
+  min-width: 7.5rem;
+}
+@media (max-width: 640px) {
+  .case-list-wide .case-list-item {
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+  .case-list-wide .case-list-num {
+    min-width: 0;
+  }
 }
 .case-list-body {
   flex-grow: 1;
