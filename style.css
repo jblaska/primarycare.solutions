@@ -683,6 +683,12 @@ a:hover { color: var(--gold); }
 .arc-stage + .arc-stage {
   margin-top: 2.25rem;
 }
+/* Alternating background for pages with more than 4 stages (e.g. the six-stage roadmap),
+   where arc-stage-final's "last stage" highlight isn't the right meaning. */
+.arc-stage-alt {
+  background: var(--cream);
+  border-left-color: var(--gold-light);
+}
 .arc-stage-final {
   border-left-color: var(--gold);
   background: var(--cream);
