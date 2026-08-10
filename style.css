@@ -476,6 +476,12 @@ a:hover { color: var(--gold); }
   letter-spacing: 0.07em;
 }
 .open-access-bar span { color: var(--gold-light); }
+.open-access-bar span a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor;
+}
+.open-access-bar span a:hover { border-bottom-style: solid; }
 
 /* ── Site Footer ───────────────────────────────────────── */
 .site-footer {
@@ -511,6 +517,12 @@ a:hover { color: var(--gold); }
   line-height: 1.7;
 }
 .footer-meta span { color: var(--gold); display: block; }
+.footer-meta span a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor;
+}
+.footer-meta span a:hover { border-bottom-style: solid; }
 
 /* ── Section Divider ───────────────────────────────────── */
 .section-divider {
