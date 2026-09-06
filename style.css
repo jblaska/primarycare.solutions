@@ -380,6 +380,7 @@ a:hover { color: var(--gold); }
   color: var(--green-deep);
   margin: 2.5rem 0 0.75rem;
   line-height: 1.2;
+  scroll-margin-top: 90px;
 }
 .article-body h3 {
   font-family: 'Source Sans 3', sans-serif;
@@ -821,4 +822,117 @@ a:hover { color: var(--gold); }
     gap: 0.3rem;
   }
   .arc-key-arrow { display: none; }
+}
+
+/* ===== The Take Away (closing companion page) ===== */
+.pillar-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0 2rem;
+}
+.pillar-chip {
+  background: var(--cream-dark);
+  border: 1px solid var(--cream-border);
+  padding: 0.55rem 1.1rem;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--green-mid);
+}
+
+.flow-sequence {
+  margin: 1.75rem 0 2.25rem;
+}
+.flow-step {
+  border: 1px solid var(--cream-border);
+  border-left: 3px solid var(--gold);
+  padding: 1.25rem 1.5rem;
+  background: var(--white);
+}
+.flow-step + .flow-step { margin-top: 0; border-top: none; }
+.flow-connector {
+  display: flex;
+  justify-content: center;
+  color: var(--gold);
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0.35rem 0;
+  background: var(--white);
+  border-left: 3px solid var(--gold);
+  border-right: 1px solid var(--cream-border);
+  margin-left: -1px;
+}
+.flow-step-label {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.4rem;
+}
+.flow-step-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--green-deep);
+  margin-bottom: 0.5rem;
+}
+.flow-step p { margin: 0; font-size: 0.92rem; color: var(--text-mid); }
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5px;
+  background: var(--cream-border);
+  border: 1.5px solid var(--cream-border);
+  margin: 1.75rem 0 2rem;
+}
+.info-card {
+  background: var(--white);
+  padding: 1.5rem 1.75rem;
+}
+.info-card h4 {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--green-deep);
+  margin-bottom: 0.5rem;
+}
+.info-card p {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.throughline-block {
+  background: var(--green-deep);
+  color: var(--cream);
+  padding: 2.5rem 2.5rem;
+  margin: 2.5rem 0 1rem;
+  text-align: center;
+}
+.throughline-label {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 1rem;
+}
+.throughline-block p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--cream);
 }
