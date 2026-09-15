@@ -1079,3 +1079,18 @@ a:hover { color: var(--gold); }
   cursor: default;
 }
 .cta-button.cta-pending:hover { background: var(--white); }
+
+/* ===== Minnesota Roadmap additions ===== */
+.dual-list-col.in-progress h4 { color: var(--gold); }
+.dual-list-col.in-progress li { color: var(--text-mid); }
+
+.stage-question {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--green-deep);
+  line-height: 1.5;
+  margin: 1.5rem 0 1.75rem;
+  padding-left: 1.25rem;
+  border-left: 3px solid var(--gold);
+}
