@@ -936,3 +936,146 @@ a:hover { color: var(--gold); }
   margin: 0 auto;
   color: var(--cream);
 }
+
+/* ===== Primer 07 — The Hub additions ===== */
+.info-card ul { margin: 0.25rem 0 0 1.1rem; padding: 0; }
+.info-card li { font-size: 0.9rem; color: var(--text-mid); line-height: 1.55; margin-bottom: 0.4rem; }
+
+.dual-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5px;
+  background: var(--cream-border);
+  border: 1.5px solid var(--cream-border);
+  margin: 1.75rem 0 2rem;
+}
+.dual-list-col { background: var(--white); padding: 1.5rem 1.75rem; }
+.dual-list-col h4 {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.85rem;
+}
+.dual-list-col.is h4 { color: var(--green-deep); }
+.dual-list-col.is-not h4 { color: var(--text-light); }
+.dual-list-col ul { margin: 0; padding-left: 1.15rem; }
+.dual-list-col li { font-size: 0.9rem; line-height: 1.55; margin-bottom: 0.5rem; }
+.dual-list-col.is li { color: var(--text-mid); }
+.dual-list-col.is-not li { color: var(--text-light); }
+
+.scenario-list { margin: 1.75rem 0 2rem; border-top: 1px solid var(--cream-border); }
+.scenario-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 1.5rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--cream-border);
+}
+.scenario-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--green-deep);
+  line-height: 1.3;
+}
+.scenario-row p { margin: 0; font-size: 0.92rem; color: var(--text-mid); line-height: 1.6; }
+
+.arch-diagram {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  margin: 1.75rem 0 0.75rem;
+  flex-wrap: wrap;
+}
+.arch-box {
+  flex: 1;
+  min-width: 160px;
+  background: var(--white);
+  border: 1.5px solid var(--cream-border);
+  border-top: 3px solid var(--gold);
+  padding: 1.25rem 1.1rem;
+  text-align: center;
+}
+.arch-box-label {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--green-deep);
+  margin-bottom: 0.5rem;
+}
+.arch-box p { margin: 0; font-size: 0.85rem; color: var(--text-mid); line-height: 1.5; }
+.arch-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-size: 1.3rem;
+  padding: 0 0.5rem;
+  flex: 0 0 auto;
+}
+.arch-box.arch-final { border-top-color: var(--green-mid); background: var(--cream-dark); }
+@media (max-width: 700px) {
+  .arch-diagram { flex-direction: column; }
+  .arch-arrow { transform: rotate(90deg); padding: 0.3rem 0; }
+}
+
+/* ===== Minnesota Initiative — opening weight treatments ===== */
+.weighted-statement {
+  background: var(--green-deep);
+  color: var(--cream);
+  padding: 2.5rem 2.75rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+.weighted-statement p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+  font-weight: 500;
+  line-height: 1.55;
+  max-width: 720px;
+  margin: 0 auto;
+  color: var(--cream);
+}
+.beat {
+  text-align: center;
+  margin: 2.25rem 0;
+}
+.beat p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  font-weight: 600;
+  color: var(--green-deep);
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0 1rem;
+}
+.cta-button {
+  display: inline-block;
+  padding: 0.9rem 1.6rem;
+  background: var(--green-deep);
+  color: var(--cream);
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  border: 1px solid var(--green-deep);
+}
+.cta-button:hover { background: var(--green-mid); border-color: var(--green-mid); }
+.cta-button.cta-pending {
+  background: var(--white);
+  color: var(--text-light);
+  border: 1px dashed var(--cream-border);
+  cursor: default;
+}
+.cta-button.cta-pending:hover { background: var(--white); }
