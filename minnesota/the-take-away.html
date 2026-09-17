@@ -369,9 +369,22 @@
           </div>
 
           <div class="cta-row">
-            <span class="cta-button cta-pending">Join the First Conversation</span>
             <a href="the-minnesota-roadmap.html" class="cta-button">Review the Minnesota Roadmap</a>
           </div>
+
+          <p style="font-style: italic; color: var(--text-light); font-size: 0.9rem; margin-top: 1rem;">If you believe you belong in this conversation and have not yet been contacted, reach out directly at <span id="mn-contact-takeaway"></span>.</p>
+          <script>
+            (function() {
+              var u = 'info26', d = 'primarycare.solutions';
+              var el = document.getElementById('mn-contact-takeaway');
+              if (el) {
+                var a = document.createElement('a');
+                a.href = 'mailto:' + u + '@' + d;
+                a.textContent = u + '@' + d;
+                el.appendChild(a);
+              }
+            })();
+          </script>
 
         </div>
 
