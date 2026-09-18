@@ -882,6 +882,7 @@ a:hover { color: var(--gold); }
   margin-bottom: 0.5rem;
 }
 .flow-step p { margin: 0; font-size: 0.92rem; color: var(--text-mid); }
+.flow-sequence.centered .flow-step p { text-align: center; }
 
 .info-grid {
   display: grid;
