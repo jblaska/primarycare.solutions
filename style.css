@@ -949,6 +949,7 @@ a:hover { color: var(--gold); }
   border: 1.5px solid var(--cream-border);
   margin: 1.75rem 0 2rem;
 }
+.dual-list.stacked { grid-template-columns: 1fr; }
 .dual-list-col { background: var(--white); padding: 1.5rem 1.75rem; }
 .dual-list-col h4 {
   font-family: 'Source Sans 3', sans-serif;
